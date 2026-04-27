@@ -1,0 +1,87 @@
+/* General Configuration */
+body {
+    background-color: lightgray;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.text-center { 
+    text-align: center; 
+}
+
+/* Grid System Configuration */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+/* Centers columns horizontally without using empty spacer divs */
+.justify-center {
+    justify-content: center; 
+}
+
+.col-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 20px;
+}
+.col-3{
+    flex: 0 0 25%;
+    max-width: 25%;
+    padding: 20px;
+}
+
+/* Header & Navigation Styles */
+.title {
+    background-color: lightblue;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+nav {
+    background-color: black;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.nav-link {
+    color: lightgray;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px 15px;
+    transition: all 0.3s ease; /* Smooth hover transition */
+}
+
+.nav-link:hover {
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+/* Main Content Blocks */
+.content-section {
+    padding: 40px 0;
+}
+
+.bg-box {
+    background-color: darkgray;
+    border-radius: 8px; /* Modern rounded corners */
+}
+
+.bg-box p {
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0px 40px 0px 40px;
+}
+
+/* Footer Configuration */
+footer {
+    text-align: center;
+    background-color: black;
+    color: lightgray;
+    padding: 20px 0;
+    margin-top: 40px;
+}
