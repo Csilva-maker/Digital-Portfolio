@@ -42,7 +42,7 @@ body {
     font-family: 'Henny Penny', cursive;
     font-size: 60px;
     text-align: center;
-    padding: 0px 40px 0px 40px;
+    padding: 0px 20px 0px 10px;
 }
 
 nav {
@@ -90,4 +90,21 @@ footer {
     color: lightgray;
     padding: 20px 0;
     margin-top: 40px;
+}
+/* cetificate page configuration */
+
+.certificate-title{
+    text-align: center;
+}
+.center{
+    text-align: center; 
+    margin-top: 20px;
+}
+.button{
+    margin-bottom: 20px; 
+    background-color: lightblue; 
+    color: black; 
+    border: 2px solid black; 
+    border-radius: 10px; 
+    padding: 10px 20px;
 }
