@@ -20,15 +20,29 @@ body {
 .justify-center {
     justify-content: center; 
 }
-
+.col-8{
+    flex: 0 0 66.66%;
+    max-width: 66.66%;
+    padding: 20px;
+}
 .col-6 {
     flex: 0 0 50%;
     max-width: 50%;
     padding: 20px;
 }
+.col-4{
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    padding: 20px;
+}
 .col-3{
     flex: 0 0 25%;
     max-width: 25%;
+    padding: 20px;
+}
+.col-2{
+    flex: 0 0 16.66%;
+    max-width: 16.66%;
     padding: 20px;
 }
 
@@ -44,7 +58,18 @@ body {
     text-align: center;
     padding: 0px 20px 0px 10px;
 }
-
+.intro {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    text-align: center;
+    padding: 0px 20px 0px 20px;
+}
+.details {
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: center;
+    padding: 0px 20px 0px 20px;
+}
 nav {
     background-color: black;
     justify-content: center;
