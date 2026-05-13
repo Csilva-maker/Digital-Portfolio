@@ -3,10 +3,17 @@ body {
     background-color: lightgray;
     font-family: Arial, sans-serif;
     margin: 0;
+    padding: 0;
 }
 
-.text-center { 
-    text-align: center; 
+.text-center {
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 /* Grid System Configuration */
@@ -16,60 +23,26 @@ body {
     width: 100%;
 }
 
-/* Centers columns horizontally without using empty spacer divs */
 .justify-center {
-    justify-content: center; 
-}
-.col-8{
-    flex: 0 0 66.66%;
-    max-width: 66.66%;
-    padding: 20px;
-}
-.col-6 {
-    flex: 0 0 50%;
-    max-width: 50%;
-    padding: 20px;
-}
-.col-4{
-    flex: 0 0 33.33%;
-    max-width: 33.33%;
-    padding: 20px;
-}
-.col-3{
-    flex: 0 0 25%;
-    max-width: 25%;
-    padding: 20px;
-}
-.col-2{
-    flex: 0 0 16.66%;
-    max-width: 16.66%;
-    padding: 20px;
+    justify-content: center;
 }
 
 /* Header & Navigation Styles */
 .title {
     background-color: lightblue;
     justify-content: center;
+    text-align: center;
     padding: 20px 0;
 }
-.PTitle{
+
+.PTitle {
     font-family: 'Henny Penny', cursive;
     font-size: 60px;
     text-align: center;
-    padding: 0px 20px 0px 10px;
+    justify-content: center;
+    padding: 0 20px 0 10px;
 }
-.intro {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    text-align: center;
-    padding: 0px 20px 0px 20px;
-}
-.details {
-    font-size: 1rem;
-    line-height: 1.5;
-    text-align: center;
-    padding: 0px 20px 0px 20px;
-}
+
 nav {
     background-color: black;
     justify-content: center;
@@ -81,7 +54,7 @@ nav {
     text-decoration: none;
     font-size: 20px;
     padding: 5px 15px;
-    transition: all 0.3s ease; /* Smooth hover transition */
+    transition: all 0.3s ease;
 }
 
 .nav-link:hover {
@@ -97,7 +70,11 @@ nav {
 
 .bg-box {
     background-color: darkgray;
-    border-radius: 8px; /* Modern rounded corners */
+    border-radius: 8px;
+    margin: 20px auto;
+    margin-left:40%;
+    padding: 20px;
+    border: 4px solid black;
 }
 
 .bg-box p {
@@ -105,7 +82,7 @@ nav {
     font-size: 1.2rem;
     line-height: 1.6;
     margin: 0;
-    padding: 0px 40px 0px 40px;
+    padding: 0 40px;
 }
 
 /* Footer Configuration */
@@ -116,20 +93,41 @@ footer {
     padding: 20px 0;
     margin-top: 40px;
 }
-/* cetificate page configuration */
 
-.certificate-title{
+/* Certificate Page Configuration */
+object {
+    object-fit: scale-down;
+}
+
+.certificate-title {
     text-align: center;
 }
-.center{
-    text-align: center; 
+
+.center {
+    text-align: center;
     margin-top: 20px;
 }
-.button{
-    margin-bottom: 20px; 
-    background-color: lightblue; 
-    color: black; 
-    border: 2px solid black; 
-    border-radius: 10px; 
+
+.button {
+    margin-bottom: 20px;
+    background-color: lightblue;
+    color: black;
+    border: 2px solid black;
+    border-radius: 10px;
     padding: 10px 20px;
+}
+
+/* Typography */
+.intro {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.details {
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: center;
+    padding: 0 20px;
 }
