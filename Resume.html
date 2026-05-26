@@ -5,14 +5,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Carlos' Digital Portfolio</title>
         <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
     </head>
     <body>
     
-        <header class="container">
-            <div class="row title">
+        <header>
+            <div class="title">
                 <h1>Carlos' Digital Portfolio</h1>
             </div>
-            <nav class="row">
+            <nav>
                 <a class="nav-link" href="index.html">Home</a>
                 <a class="nav-link" href="Resume.html">Resume</a>
                 <a class="nav-link" href="WorkSample.html">Work Sample</a>
@@ -22,9 +23,8 @@
         </header>
 
         <main>
-            <div class="row">
-                <div class="col-3"> </div>                        
-                <div class="container content-section col-6"> 
+                       
+                <div class="container content-section"> 
                     <section>
                         <h1 class="PTitle">Resume</h1>
                         <p class="center intro">
@@ -33,20 +33,21 @@
                         </p>
                     </section>
                 </div>
-                <div class="col-3"> </div>
-            </div>
             <hr>
-            <div class="row">
-                <div class="col-3"> </div>                        
-                <div class="container content-section col-6"> 
-                    <div class="content-section bg-box" style="margin: 0px auto; padding: 20px; border: 4px solid black;">
-                    <iframe src="imagensAndVideos/Resume.png" width="92%" height="1025px"></iframe>
+            <div>                        
+                <div class="container  center"> 
+                    <div class="bg-box" >
+                        <button onclick="toggleImage('Resume')" class="button">See Certification</button>
+                        <div class="container-fluid" style="padding:0px;">
+                            <object id="Resume" data="document.pdf" type="application/pdf" style="display: none;">
+                                <embed src="imagensAndVideos/Resume.png" width="500" height="600" />
+                            </object>
+                        </div>
                         <p class="details">
                             For more details, you can download my resume <a href="imagensAndVideos/Resume.pdf" download>here</a>.
                         </p>  
                     </div>
                 </div>
-                <div class="col-3"> </div>
             </div>
         </main>
     
