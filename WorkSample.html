@@ -5,14 +5,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Carlos' Digital Portfolio</title>
         <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
     </head>
     <body>
     
-        <header class="container">
-            <div class="row title">
+        <header>
+            <div class="title">
                 <h1>Carlos' Digital Portfolio</h1>
             </div>
-            <nav class="row">
+            <nav>
                 <a class="nav-link" href="index.html">Home</a>
                 <a class="nav-link" href="Resume.html">Resume</a>
                 <a class="nav-link" href="WorkSample.html">Work Sample</a>
@@ -22,30 +23,82 @@
         </header>
 
         <main>
-            <div class="row">
-                <div class="col-3"> </div>                        
-                <div class="container content-section col-6"> 
+            <div>                     
+                <div class="container content-section"> 
                     <section>
-                        <h1 class="PTitle">HOME</h1>
+                        <h1 class="PTitle">Work Samples</h1>
+                        <p class="center intro">
+                            Below are some of the projects I have worked on, showcasing my skills and experience in web development and programming. 
+                            These samples demonstrate my ability to create functional and visually appealing websites, as well as my proficiency in various programming languages and technologies.
+                        </p>
                     </section>
                 </div>
-                <div class="col-3"> </div>
+                <hr>
             </div>
-            <div style="margin-bottom: 25px;">
-                <video controls controlsList="nodownload noplaybackrate noremoteplayback"
-                    disablePictureInPicture
-                    oncontextmenu="return false;">
-                    <source src="APfinalprojectvideo.mp4" type="video/mp4">
-                    Your browser doesn't support that video
-                </video>
-            </div>
-            <div style="margin-bottom: 25px;">
-                <video controls controlsList="nodownload noplaybackrate noremoteplayback"
-                    disablePictureInPicture
-                    oncontextmenu="return false;">
-                    <source src="unit7recording.mp4" type="video/mp4">
-                    Your browser doesn't support that video
-                </video>
+            <div class="center container">
+                <section class="bg-box">
+                    <h2>Project Videos</h2>
+                    <h4>Poppy Playtime Quiz</h4>
+                    <br>
+                    <p>test of library and many functions working togheter.</p>
+                    <div class="video-container">
+                        <button onclick="toggleVideo('video3', this)" class="button">Play Video</button>
+                        <video id="video3" controls controlsList="nodownload noplaybackrate noremoteplayback"
+                            disablePictureInPicture oncontextmenu="return false;" style="display: none;">
+                            <source src="imagensAndVideos/unit7recording.mp4" type="video/mp4">
+                            Your browser doesn't support that video
+                        </video>
+                    </div>
+                    <a href="https://studio.code.org/projects/applab/a98ccaaa-d4d9-4a91-baaa-c1cd2819dd4d" target="_blank">
+                        <button class="button">try Project</button>
+                    </a>
+                    <hr>
+                    <h4>Bank of Gamblens</h4>
+                    <br>
+                    <p>test of aplication such as login screen and math process.</p>
+                    <div class="video-container">
+                        <button onclick="toggleVideo('video1', this)" class="button">Play Video</button>
+                        <video id="video1" controls controlsList="nodownload noplaybackrate noremoteplayback"
+                            disablePictureInPicture oncontextmenu="return false;" style="display: none;">
+                            <source src="imagensAndVideos/videos/APfinalprojectvideo.mp4" type="video/mp4">
+                            Your browser doesn't support that video
+                        </video>
+                    </div>
+                    <a href="https://studio.code.org/projects/applab/990b8035-b77f-4219-bf2e-c33cf90f593" target="_blank">
+                        <button class="button">try Project</button>
+                    </a>
+                    <hr>
+            
+                    <h4>Movies Woop Woop</h4>
+                    <br>
+                    <p>test of many list applications and interactions bewteen them.</p>
+                    <div class="video-container">
+                        <button onclick="toggleVideo('video2', this)" class="button">Play Video</button>
+                        <video id="video2" controls controlsList="nodownload noplaybackrate noremoteplayback"
+                            disablePictureInPicture oncontextmenu="return false;" style="display: none;">
+                            <source src="imagensAndVideos/videos/unit7recording.mp4" type="video/mp4">
+                            Your browser doesn't support that video
+                        </video>
+                    </div>
+                    <a href="https://studio.code.org/projects/applab/e1023ba7-8956-4d55-ac17-f6ad33f48424" target="_blank">
+                        <button class="button">try Project</button>
+                    </a>
+                    <hr>
+                    <h4>My First App</h4>
+                    <br>
+                    <p>My first try to make a simple app</p>
+                    <div class="video-container">
+                        <button onclick="toggleVideo('video4', this)" class="button">Play Video</button>
+                        <video id="video4" controls controlsList="nodownload noplaybackrate noremoteplayback"
+                            disablePictureInPicture oncontextmenu="return false;" style="display: none;">
+                            <source src="imagensAndVideos/unit7recording.mp4" type="video/mp4">
+                            Your browser doesn't support that video
+                        </video>
+                    </div>
+                    <a href="https://studio.code.org/projects/applab/u-netQoRiA5v7sw1BpvJWT-v0IveJCknWhESy06Szb8" target="_blank">
+                        <button class="button">try Project</button>
+                    </a>
+                </section>
             </div>
         </main>
     
@@ -56,9 +109,6 @@
             <P>
                 Email <br> <a class="nav-link" href="mailto:carlos.silva.2008pl@gmail.com">carlos.silva.2008pl@gmail.com</a>
             </p>
-            <p>
-                Indeed <br> <a href=""></a>
-            </P>
             <p>
                 &copy; 2026 Carlos
             </p>

@@ -131,3 +131,18 @@ object {
     text-align: center;
     padding: 0 20px;
 }
+/* work sample page configuration */
+.video-container {
+    display: flex;
+    flex-direction: column; /* Stack button and video vertically */
+    align-items: center;    /* Center them horizontally */
+    justify-content: center;
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+.video-container video {
+    margin-top: 15px;      /* Space between button and video */
+    max-width: 100%;       /* Prevents video from breaking out of bg-box */
+    width: 640px;          /* Adjust video size as desired */
+}
