@@ -1,3 +1,4 @@
+// Function to toggle visibility of images based on class name
 function toggleImagens(className) {
     // Select all elements that have this class name
     var frames = document.getElementsByClassName(className);
@@ -11,7 +12,7 @@ function toggleImagens(className) {
         }
     }
 }
-
+// Function to toggle video visibility and playback
 function toggleVideo(videoId, button) {
     const video = document.getElementById(videoId);
 

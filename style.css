@@ -1,13 +1,12 @@
-/* General Configuration */
+/* =========================================================
+   GENERAL CONFIGURATION
+========================================================= */
+
 body {
-    background-color: lightgray;
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-}
-
-.text-center {
-    text-align: center;
+    background-color: lightgray;
+    font-family: Arial, sans-serif;
 }
 
 .container {
@@ -16,108 +15,24 @@ body {
     padding: 0 15px;
 }
 
-/* Grid System Configuration */
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-}
 
-.justify-center {
-    justify-content: center;
-}
+/* =========================================================
+   TYPOGRAPHY
+========================================================= */
 
-/* Header & Navigation Styles */
-.title {
-    background-color: lightblue;
-    justify-content: center;
+.text-center,
+.center,
+.certificate-title {
     text-align: center;
-    padding: 20px 0;
 }
 
 .PTitle {
     font-family: 'Henny Penny', cursive;
     font-size: 60px;
     text-align: center;
-    justify-content: center;
     padding: 0 20px 0 10px;
 }
 
-nav {
-    background-color: black;
-    text-align: center;
-    justify-content: center;
-    padding: 10px 0;
-}
-
-.nav-link {
-    color: lightgray;
-    text-decoration: none;
-    font-size: 20px;
-    padding: 5px 15px;
-    transition: all 0.3s ease;
-}
-
-.nav-link:hover {
-    color: white;
-    font-weight: bold;
-    font-size: 22px;
-}
-
-/* Main Content Blocks */
-.content-section {
-    padding: 40px 0;
-}
-
-.bg-box {
-    background-color: darkgray;
-    border-radius: 8px;
-    margin: 20px auto;
-    padding: 20px;
-    border: 4px solid black;
-}
-
-.bg-box p {
-    text-align: center;
-    font-size: 1.2rem;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0 40px;
-}
-
-/* Footer Configuration */
-footer {
-    text-align: center;
-    background-color: black;
-    color: lightgray;
-    padding: 20px 0;
-    margin-top: 40px;
-}
-
-/* Certificate Page Configuration */
-object {
-    object-fit: scale-down;
-}
-
-.certificate-title {
-    text-align: center;
-}
-
-.center {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.button {
-    margin-bottom: 20px;
-    background-color: lightblue;
-    color: black;
-    border: 2px solid black;
-    border-radius: 10px;
-    padding: 10px 20px;
-}
-
-/* Typography */
 .intro {
     font-size: 1.2rem;
     line-height: 1.6;
@@ -131,18 +46,137 @@ object {
     text-align: center;
     padding: 0 20px;
 }
-/* work sample page configuration */
+
+
+/* =========================================================
+   FLEX / GRID UTILITIES
+========================================================= */
+
+.justify-center {
+    justify-content: center;
+}
+
+.center {
+    margin-top: 20px;
+}
+
+
+/* =========================================================
+   HEADER & NAVIGATION
+========================================================= */
+
+.title {
+    background-color: lightblue;
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav {
+    background-color: black;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.nav-link {
+    color: lightgray;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px 15px;
+    transition: all 0.3s ease;
+}
+
+.nav-link i {
+    margin-right: 6px;
+}
+
+.nav-link:hover {
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+
+/* =========================================================
+   MAIN CONTENT
+========================================================= */
+
+.content-section {
+    padding: 40px 0;
+}
+
+.bg-box {
+    background-color: darkgray;
+    border: 4px solid black;
+    border-radius: 8px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.bg-box p {
+    margin: 0;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+.button {
+    margin-bottom: 20px;
+    padding: 10px 20px;
+
+    background-color: lightblue;
+    color: black;
+
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+
+/* =========================================================
+   VIDEO / WORK SAMPLE PAGE
+========================================================= */
+
 .video-container {
     display: flex;
-    flex-direction: column; /* Stack button and video vertically */
-    align-items: center;    /* Center them horizontally */
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    margin-bottom: 25px;
+
     width: 100%;
+    margin-bottom: 25px;
 }
 
 .video-container video {
-    margin-top: 15px;      /* Space between button and video */
-    max-width: 100%;       /* Prevents video from breaking out of bg-box */
-    width: 640px;          /* Adjust video size as desired */
+    width: 640px;
+    max-width: 100%;
+    margin-top: 15px;
+}
+
+
+/* =========================================================
+   CERTIFICATION PAGE
+========================================================= */
+
+object {
+    object-fit: scale-down;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+    margin-top: 40px;
+    padding: 20px 0;
+
+    background-color: black;
+    color: lightgray;
+
+    text-align: center;
 }
