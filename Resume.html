@@ -9,10 +9,9 @@
         <script src="script.js" defer></script>
     </head>
     <body>
-    
         <header>
             <div class="title">
-                <h1>Carlos' Digital Portfolio</h1>
+                <h1><i class="bi bi-clipboard2-fill"></i> Carlos' Digital Portfolio <i class="bi bi-clipboard2-fill"></i></h1>
             </div>
             <nav>
                 <a class="nav-link" href="index.html"><i class="bi bi-house-fill"></i> Home</a>
@@ -23,31 +22,28 @@
             </nav>
         </header>
 
-        <main>
-                       
-                <div class="container content-section"> 
-                    <section>
-                        <h1 class="PTitle">Resume</h1>
-                        <p class="center intro">
-                            Below is a comprehensive overview of my educational background, work experience, skills, and achievements. 
-                            This resume highlights my qualifications and demonstrates my suitability for potential opportunities in the field of technology and web development.
-                        </p>
-                    </section>
-                </div>
-            <hr>
-            <div>                        
-                <div class="container  center"> 
-                    <div class="bg-box" >
-                        <button onclick="toggleImage('Resume')" class="button">See Certification</button>
-                        <div class="container-fluid" style="padding:0px;">
-                            <object id="Resume" data="document.pdf" type="application/pdf" style="display: none;">
-                                <embed src="imagensAndVideos/Resume.png" width="700px" height="1000px" />
-                            </object>
-                        </div>
-                        <p class="details">
-                            For more details, you can download my resume <a href="imagensAndVideos/Resume.pdf" download>here</a>.
-                        </p>  
+        <main>         
+            <div class="container content-section"> 
+                <section>
+                    <h1 class="PTitle">Resume</h1>
+                    <p class="center intro">
+                        Below is a comprehensive overview of my educational background, work experience, skills, and achievements. 
+                        This resume highlights my qualifications and demonstrates my suitability for potential opportunities in the field of technology and web development.
+                    </p>
+                </section>
+            </div>
+            <hr>                      
+            <div class="container center"> 
+                <div class="bg-box" >
+                    <button onclick="toggleImage('Resume')" class="button">See Certification</button>
+                    <div class="container-fluid" style="padding:0px;">
+                        <object id="Resume" data="document.pdf" type="application/pdf" style="display: none;">
+                            <embed src="imagensAndVideos/Resume.png" width="700px" height="1000px" />
+                        </object>
                     </div>
+                    <p class="details">
+                        For more details, you can download my resume <a href="imagensAndVideos/Resume.pdf" download>here</a>.
+                    </p>  
                 </div>
             </div>
         </main>
@@ -63,6 +59,5 @@
                 &copy; 2026 Carlos
             </p>
         </footer>
-    
     </body>
 </html>

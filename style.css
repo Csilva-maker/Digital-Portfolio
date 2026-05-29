@@ -20,9 +20,8 @@ body {
    TYPOGRAPHY
 ========================================================= */
 
-.text-center,
-.center,
-.certificate-title {
+
+.center{
     text-align: center;
 }
 
@@ -90,9 +89,9 @@ nav {
 }
 
 .nav-link:hover {
-    color: white;
+    color: rgb(74, 74, 241);
     font-weight: bold;
-    font-size: 22px;
+    font-size: 28px;
 }
 
 
